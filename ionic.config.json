@@ -1,0 +1,8 @@
+{
+  "name": "call_center",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
