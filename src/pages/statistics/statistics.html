@@ -1,0 +1,48 @@
+
+<ion-header>
+
+  <ion-navbar color="red_bomba">
+    <ion-title>Estadisticas </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Cantidad : Interesados</ion-label>
+    <ion-range min="-300" max="200" [(ngModel)]="saturation1" color="secondary">
+      <ion-label range-left>743</ion-label>
+      <ion-label range-right>1000</ion-label>
+    </ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cantidad : Volver a llamar</ion-label>
+    <ion-range min="-600" max="100" [(ngModel)]="saturation2" color="secondary">
+      <ion-label range-left>823</ion-label>
+      <ion-label range-right>1000</ion-label>
+    </ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cantidad : Solo desea Informacion</ion-label>
+    <ion-range min="-200" max="800" [(ngModel)]="saturation3" color="secondary">
+      <ion-label range-left>189</ion-label>
+      <ion-label range-right>1000</ion-label>
+    </ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cantidad : No quiere ser contactado</ion-label>
+    <ion-range min="-200" max="300" [(ngModel)]="saturation4" color="secondary">
+      <ion-label range-left>300</ion-label>
+      <ion-label range-right>1000</ion-label>
+    </ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cantidad : Vendido</ion-label>
+  <ion-range min="-800" max="50" [(ngModel)]="saturation5" color="secondary">
+    <ion-label range-left>980</ion-label>
+    <ion-label range-right>1000</ion-label>
+  </ion-range>
+</ion-item>
+
+</ion-content>
