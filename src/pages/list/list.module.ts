@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { ListPage } from './list';
-
 @NgModule({
   declarations: [
     ListPage,
@@ -10,4 +9,7 @@ import { ListPage } from './list';
     IonicPageModule.forChild(ListPage),
   ],
 })
-export class ListPageModule {}
+export class ListPageModule {
+
+
+}

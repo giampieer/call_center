@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {WebServicesProvider} from "../../providers/web-services/web-services";
 
 /**
  * Generated class for the ListPage page.
@@ -15,11 +16,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ListPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  calls : any;
+  constructor(public webservices: WebServicesProvider) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ListPage');
+  ionViewWillEnter() {
+    this.getListCalls()
+  }
+  getListCalls() {
+    this.webservices.listCall().then((result) => {
+      console.log(result);
+      this.calls = result;
+    }, (err) => {
+      console.log(err);
+    });
   }
 
 }
