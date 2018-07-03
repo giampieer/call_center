@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {StatisticsPage} from "../statistics/statistics";
 import {ListPage} from "../list/list";
-
 @Component({
   templateUrl: 'tabs.html'
 })

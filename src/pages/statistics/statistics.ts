@@ -31,5 +31,4 @@ export class StatisticsPage {
       console.log(err);
     });
   }
-
 }
