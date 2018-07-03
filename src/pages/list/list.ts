@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {WebServicesProvider} from "../../providers/web-services/web-services";
-
-/**
- * Generated class for the ListPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { IonicPage} from 'ionic-angular';
+import { WebServicesProvider } from "../../providers/web-services/web-services";
 
 @IonicPage()
 @Component({
@@ -15,7 +8,6 @@ import {WebServicesProvider} from "../../providers/web-services/web-services";
   templateUrl: 'list.html',
 })
 export class ListPage {
-
   calls : any;
   constructor(public webservices: WebServicesProvider) {
   }
@@ -30,5 +22,4 @@ export class ListPage {
       console.log(err);
     });
   }
-
 }
