@@ -11,11 +11,11 @@
 <ion-content padding class="background">
   <ion-card *ngFor="let call of calls" >
     <ion-item color="red_bomba">
-      <p> ID :{{ call.id }}</p>
-      <p> HORA LLAMADA :{{ call.starttime }}</p>
-      <p>NUMERO REMITENTE :{{ call.source }}</p>
-      <p>NUMERO RECEPTOR{{ call.destination }}</p>
-      <p>DURACION LLAMADA:{{ call.duration }} segundos</p>
+      <p> ID : {{ call.id }}</p>
+      <p> HORA LLAMADA : {{ call.starttime }}</p>
+      <p>NUMERO REMITENTE : {{ call.source }}</p>
+      <p>NUMERO RECEPTOR : {{ call.destination }}</p>
+      <p>DURACION LLAMADA : {{ call.duration }} segundos</p>
       <p> ESTADO : {{ call.callstate }}</p>
     </ion-item>
   </ion-card>

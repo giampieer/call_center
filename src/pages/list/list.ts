@@ -15,7 +15,6 @@ export class ListPage {
   ionViewWillEnter() {
     this.getListCalls();
     localStorage.setItem('ip', JSON.stringify(0));
-    this.getIp();
   }
   getListCalls() {
     this.webservices.listCall().then((result) => {
@@ -39,7 +38,8 @@ export class ListPage {
           text: 'Borrar Anterior',
           role: 'cancel',
           handler: data => {
-            window.localStorage.clear();
+            //window.localStorage.clear();
+            localStorage.setItem('ip', JSON.stringify(0));
             this.Alerta("Reiniciar Aplicativo");
           }
         },
