@@ -3,12 +3,29 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class WebServicesProvider {
-  listcall: string = "http://local.callcenter.com/?op=1";
-  listdata: string = "http://local.callcenter.com/?op=2";
+  ip: any = JSON.parse(localStorage.getItem('ip'));
+  //http://180.172.10.35/callcenter/
+  //listcall: string = "http://local.callcenter.com/?op=1";
+  //listdata: string = "http://local.callcenter.com/?op=2";
+
+  listcall: string ;
+  listdata: string ;
   constructor(public http: HttpClient) {
     console.log('Hello WebservicesProvider Provider');
   }
+  validate() {
+    if(this.ip != 0 ) {
+      this.listcall = "http://"+this.ip+"/callcenter/?op=1";
+      console.log(this.listcall);
+      this.listdata = "http://"+this.ip+"/callcenter/?op=2";
+    } else {
+      this.listcall = "http://local.callcenter.com/?op=1";
+      console.log(this.listcall);
+      this.listdata = "http://local.callcenter.com/?op=2";
+    }
+  }
   listCall() {
+    this.validate();
     return new Promise(resolve => {
       this.http.get(this.listcall)
         .subscribe(data => {
@@ -19,6 +36,7 @@ export class WebServicesProvider {
     });
   }
   listData() {
+    this.validate();
     return new Promise(resolve => {
       this.http.get(this.listdata)
         .subscribe(data => {
