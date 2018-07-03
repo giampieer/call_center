@@ -15,6 +15,7 @@ export class ListPage {
   ionViewWillEnter() {
     this.getListCalls();
     localStorage.setItem('ip', JSON.stringify(0));
+    this.getIp();
   }
   getListCalls() {
     this.webservices.listCall().then((result) => {
