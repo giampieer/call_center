@@ -9,7 +9,8 @@ import { IonicPage } from 'ionic-angular';
 export class StatisticsPage {
   constructor() {
   }
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad StatisticsPage');
-  }
+  public chartLabels:string[] = ['sadsad','sadas','asdasdas'];
+  public chartData:number[] = [100,12,132];
+  public chartType:string = 'doughnut';
+
 }

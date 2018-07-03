@@ -9,6 +9,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatisticsPage} from "../pages/statistics/statistics";
 import { ListPage} from "../pages/list/list";
 import { WebServicesProvider } from '../providers/web-services/web-services';
+import { ChartsModule} from "ng2-charts";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { WebServicesProvider } from '../providers/web-services/web-services';
   imports: [
     BrowserModule,
     HttpClientModule,
-
+    ChartsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
