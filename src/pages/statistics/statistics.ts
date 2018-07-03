@@ -12,5 +12,6 @@ export class StatisticsPage {
   public chartLabels:string[] = ['sadsad','sadas','asdasdas'];
   public chartData:number[] = [100,12,132];
   public chartType:string = 'doughnut';
+  public chartType1:string = 'line';
 
 }
