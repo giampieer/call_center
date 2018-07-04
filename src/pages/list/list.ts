@@ -30,7 +30,7 @@ export class ListPage {
       inputs: [
         {
           name: 'ip',
-          placeholder: 'Username'
+          placeholder: 'IP'
         }
       ],
       buttons: [
