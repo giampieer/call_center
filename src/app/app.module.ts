@@ -3,20 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
+import { ChartsModule} from "ng2-charts";
 import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatisticsPage} from "../pages/statistics/statistics";
 import { ListPage} from "../pages/list/list";
 import { WebServicesProvider } from '../providers/web-services/web-services';
-import { ChartsModule} from "ng2-charts";
+import { IpPage } from "../pages/ip/ip";
 
 @NgModule({
   declarations: [
     MyApp,
     TabsPage,
     StatisticsPage,
-    ListPage
+    ListPage,
+    IpPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { ChartsModule} from "ng2-charts";
     MyApp,
     TabsPage,
     StatisticsPage,
-    ListPage
+    ListPage,
+    IpPage
   ],
   providers: [
     StatusBar,
