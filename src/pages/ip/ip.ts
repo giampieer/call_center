@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {TabsPage} from "../tabs/tabs";
 
-@IonicPage()
 @Component({
   selector: 'page-ip',
   templateUrl: 'ip.html',

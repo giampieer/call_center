@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage } from 'ionic-angular';
 import {WebServicesProvider} from "../../providers/web-services/web-services";
 
-@IonicPage()
 @Component({
   selector: 'page-statistics',
   templateUrl: 'statistics.html',

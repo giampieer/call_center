@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage} from 'ionic-angular';
 import { WebServicesProvider } from "../../providers/web-services/web-services";
 import { AlertController } from 'ionic-angular';
 import { Platform, App } from 'ionic-angular';
 import {IpPage} from "../ip/ip";
-@IonicPage()
+
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html',
