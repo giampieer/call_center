@@ -4,10 +4,6 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class WebServicesProvider {
   ip: any = JSON.parse(localStorage.getItem('ip'));
-  //http://180.172.10.35/callcenter/
-  //listcall: string = "http://local.callcenter.com/?op=1";
-  //listdata: string = "http://local.callcenter.com/?op=2";
-
   listcall: string ;
   listdata: string ;
   constructor(public http: HttpClient) {

@@ -3,13 +3,13 @@
     <ion-title>Lista de Resultados </ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="signOff()">
-        <ion-icon name="options"></ion-icon>
+        <ion-icon name="options" md="md-exit"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
 <ion-content padding class="background">
-  <ion-card *ngFor="let call of calls" >
+  <ion-card *ngFor="let call of calls.reverse()" >
     <ion-item color="red_bomba">
       <p> ID : {{ call.id }}</p>
       <p> HORA LLAMADA : {{ call.starttime }}</p>
