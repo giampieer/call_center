@@ -9,7 +9,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding class="background">
-  <ion-card *ngFor="let call of calls.reverse()" >
+  <ion-card *ngFor="let call of calls" >
     <ion-item color="red_bomba">
       <p> ID : {{ call.id }}</p>
       <p> HORA LLAMADA : {{ call.starttime }}</p>
