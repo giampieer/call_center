@@ -8,7 +8,7 @@ import {WebServicesProvider} from "../../providers/web-services/web-services";
 export class StatisticsPage {
   calls : any;
   public chartLabels1:string[] = ['Llamada Colgada','Llamada Perdida','Llamada Extraviada'];
-  public chartLabels2:string[] = ['Usuario 1000','Usuario 1001','Usuario 1002','Usuario 1003','Usuario 1004'];
+  public chartLabels2:string[] = ['Telefono IP','Luis','Cristhoper','Ramos','Vilchez'];
   public chartData1:number[] = [0,0,0];
   public chartData2:number[] = [0,0,0];
   public chartType1:string = 'doughnut';
