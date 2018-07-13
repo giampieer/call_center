@@ -15,9 +15,9 @@ export class WebServicesProvider {
       console.log(this.listcall);
       this.listdata = "http://"+this.ip+"/callcenter/?op=2";
     } else {
-      this.listcall = "http://local.callcenter.com/?op=1";
+      this.listcall = "http://"+this.ip+"/callcenter/?op=1";
       console.log(this.listcall);
-      this.listdata = "http://local.callcenter.com/?op=2";
+      this.listdata = "http://"+this.ip+"/callcenter/?op=2";
     }
   }
   listCall() {
